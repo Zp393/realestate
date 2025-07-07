@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Properties | PH House & Lot</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">PH House & Lot</div>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="developers.html">Developers</a>
+      <a href="properties.html" class="active">Properties</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>All Available Properties</h1>
+      <p>Choose from pre-selling and ready-for-occupancy units across the Philippines.</p>
+    </section>
+
+    <section class="filter-bar">
+        <input type="text" id="searchInput" placeholder="Search by keyword..." />
+
+        <select id="locationFilter">
+            <option value="">All Locations</option>
+            <option value="santo tomas">Santo Tomas</option>
+            <option value="san pablo">San Pablo</option>
+            <option value="tanauan">Tanauan</option>
+    </select>
+
+    <select id="priceFilter">
+            <option value="">All Prices</option>
+            <option value="low">₱1M–2M</option>
+            <option value="mid">₱2M–3M</option>
+            <option value="high">₱3M+</option>
+    </select>
+
+          <!-- RFO Toggle -->
+    <label class="rfo-toggle">
+            <input type="checkbox" id="rfoToggle" />
+            Show only Ready-for-Occupancy
+    </label>
+
+  <!-- Reset Button -->
+            <button id="resetBtn" class="reset-btn">Reset Filters</button>
+    </section>
+
+
+    <section class="property-grid">
+      <div class="property-card" data-location="santo tomas" data-price="mid" data-rfo="yes">
+        <img src="images/phirst1.jpg" alt="Phirst Park Homes sample house" />
+        <h2>Phirst Park - Santo Tomas</h2>
+        <p>₱1.9M – 3.5M | 2-3 Bedrooms</p>
+        <a href="#">View Details</a>
+      </div>
+
+      <div class="property-card" data-location="san pablo" data-price="low" data-rfo="no">
+        <img src="images/plaincrest1.jpg" alt="Plaincrest Phase 2 model unit" />
+        <h2>Plaincrest Phase 2 - San Pablo</h2>
+        <p>₱1.7M – 2.9M | 2 Bedrooms</p>
+        <a href="#">View Details</a>
+      </div>
+
+      <div class="property-card" data-location="tanauan" data-price="high" data-rfo="yes">
+        <img src="images/vallepio1.jpg" alt="Valle Pio Executive house sample" />
+        <h2>Valle Pio Executive - Tanauan</h2>
+        <p>₱2.2M – 4.1M | 3 Bedrooms</p>
+        <a href="#">View Details</a>
+      </div>
+
+      <!-- Add this if you're offering projects anywhere -->
+      <div class="property-card">
+        <img src="images/anywhere.jpg" alt="Ask for any location project" />
+        <h2>Need a house anywhere in the Philippines?</h2>
+        <p>I can match you with a project wherever you want to live!</p>
+        <a href="contact.html">Inquire Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 PH House & Lot. Powered by Bhatz Web Solutions</p>
+  </footer>
+</body>
+</html>
